@@ -1,9 +1,103 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hellow Coursa</title>
+	<meta charset="utf-8">
+	<title>module2</title>
+	<style>
+		*{
+			box-sizing: border-box;
+			position: relative;
+			font-family: Arial, Helvetico, sans-serif;
+		}
+		.row{
+			width =100%;
+		}
+		h1{ 
+		text-align:center;
+
+	}
+
+		p{
+			margin:10px; 
+			text-align: center;
+			clear:both;
+
+		}
+		span.h{
+			padding: 10px;
+			float: right;
+			border: 1px solid black;
+			font-size: 125%;
+		}
+		div.m {
+			background-color: lightgray;
+			border: 1px solid black;
+			margin: 10px;
+
+		}
+
+		@media (min-width: 992px){
+			.col-lg-4{
+				float: left;
+				width: 33.333%
+
+			}
+		}
+		@media (min-width:768px) and (max-width: 991px){
+			.col-md-6{
+				float: left;
+				width: 50%
+			} 
+			.col-md-6 + #n3{
+				clear: left;
+				width: 100%
+			} 
+		}
+		#h1 {
+			background-color: lightblue;
+		}
+		#h2 {
+			background-color: yellow;
+		}
+		#h3 {
+			background-color: lightgreen;
+		}
+	 </style>
+
+
+
 </head>
 <body>
-<h1>Hellow Coursera!</h1>
+	<h1>Our Menu</h1>
+	<div class="row">
+	<div class="col-md-6 col-lg-4">
+		<div class="m">
+		<span class="h" id="h1"> First</span>
+		<p>Horatio says 'tis but our fantasy,
+And will not let belief take hold of him
+Touching this dreaded sight, twice seen of us:
+Therefore I have entreated him along
+With us to watch the minutes of this night;
+That if again this apparition come,
+He may approve our eyes and speak to it.</p>
+</div></div>
+	<div class="col-md-6 col-lg-4">
+		<div class="m">
+		<span class="h" id="h2"> Second</span>
+		<p>Sit down awhile;
+And let us once again assail your ears,
+That are so fortified against our story
+What we have two nights seen.</p></div></div>
+	<div class="col-md-6 col-lg-4" id="n3">
+		<div class="m">
+		<span class="h" id="h3"> Third</span>
+		<p>Last night of all,
+When yond same star that's westward from the pole
+Had made his course to illume that part of heaven
+Where now it burns, Marcellus and myself,
+The bell then beating one,--</p></div></div>
+</div>
+
 </body>
 </html>
